@@ -2,7 +2,7 @@
 
 This is a VSCode extension that just converts px in CSS to rem.
 
-  <img src="./sample.gif" width="400"/>
+  <img src="https://raw.githubusercontent.com/reizt/vscode-px-to-rem/master/sample.gif" width="400"/>
 
 The values you can set in the `settings.json` are down below.
 
