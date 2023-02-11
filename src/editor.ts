@@ -1,10 +1,10 @@
 import type * as vscode from 'vscode';
 import { pxToRem } from './core';
 
-export const replaceEditorRange = (editor: vscode.TextEditor, range: vscode.Range) => {
+export const replaceEditorRange = (editor: vscode.TextEditor, range: vscode.Range, pxPerRem: number) => {
   editor.edit((builder) => {
     const source = editor.document.getText(range);
-    const replaced = pxToRem(source);
+    const replaced = pxToRem(source, pxPerRem);
     builder.replace(range, replaced);
   });
 };

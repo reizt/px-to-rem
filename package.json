@@ -24,7 +24,18 @@
         "command": "px-to-rem.convert",
         "title": "Convert px to rem"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "px to rem",
+      "properties": {
+        "px-to-rem.px-per-rem": {
+          "type": "number",
+          "default": 10,
+          "title": "px per rem",
+          "description": "px per 1rem to refer to when executing the convert command. defaults to 10"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",

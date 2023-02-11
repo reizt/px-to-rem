@@ -1,6 +1,4 @@
-const DEFAULT_RATE = 10;
-
-export const pxToRem = (str: string, rate = DEFAULT_RATE): string => {
+export const pxToRem = (str: string, rate: number): string => {
   let newStr = str;
 
   const reg = /([0-9.]+)px/g;
