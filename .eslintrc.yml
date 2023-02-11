@@ -1,0 +1,40 @@
+root: true
+env:
+  browser: true
+  es2022: true
+  node: true
+ignorePatterns:
+  - /*.js
+  - ./src/openapi/*
+  - /jest.config.ts
+plugins:
+  - eslint-plugin-tailwindcss
+extends:
+  - eslint:recommended
+  - standard-with-typescript
+  - eslint-config-prettier
+parser: '@typescript-eslint/parser'
+parserOptions:
+  project: './tsconfig.json'
+rules:
+  '@typescript-eslint/no-unnecessary-condition': error
+  '@typescript-eslint/restrict-template-expressions':
+    - error
+    - allowNumber: true
+      allowBoolean: true
+      allowAny: true
+      allowNullish: false
+      allowRegExp: true
+  semi: off
+  '@typescript-eslint/explicit-function-return-type': off
+  '@typescript-eslint/consistent-type-definitions': off
+  '@typescript-eslint/array-type':
+    - error
+    - default: array
+      readonly: array
+  '@typescript-eslint/no-misused-promises': off
+  '@typescript-eslint/no-non-null-assertion': off
+  '@typescript-eslint/no-unused-vars':
+    - error
+    - varsIgnorePattern: '_.*'
+      args: none
