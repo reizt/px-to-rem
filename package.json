@@ -4,7 +4,7 @@
   "displayName": "CSS px to rem",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reizt/px-to-rem.git"
+    "url": "git+https://github.com/reizt/vscode-px-to-rem"
   },
   "description": "Just convert px to rem",
   "version": "0.0.1",
