@@ -15,7 +15,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:px-to-rem.convert"
+    "onCommand:px-to-rem.convert",
+    "onLanguage:css"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -28,11 +29,17 @@
     "configuration": {
       "title": "px to rem",
       "properties": {
-        "px-to-rem.px-per-rem": {
+        "px-to-rem.pxPerRem": {
           "type": "number",
           "default": 10,
           "title": "px per rem",
           "description": "px per 1rem to refer to when executing the convert command. defaults to 10"
+        },
+        "px-to-rem.runOnSave": {
+          "type": "boolean",
+          "default": false,
+          "title": "format on save",
+          "description": "whether convert on save. defaults to false"
         }
       }
     }
