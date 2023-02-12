@@ -33,8 +33,8 @@ export function activate(context: vscode.ExtensionContext) {
   const formatter = vscode.workspace.onDidSaveTextDocument(async (document) => {
     const setting = vscode.workspace.getConfiguration('px-to-rem');
     const pxPerRem = setting.get<number>('pxPerRem') ?? DEFAULT_PX_PER_REM;
-    const runOnSave = setting.get<boolean>('runOnSave') ?? false;
-    if (!runOnSave) return;
+    const formatOnSave = setting.get<boolean>('formatOnSave') ?? false;
+    if (!formatOnSave) return;
 
     const wholeRange = vscodeUtil.getDocumentWholeRange(document);
     const source = document.getText(wholeRange);

@@ -40,7 +40,7 @@
           "title": "px per rem",
           "description": "px per 1rem to refer to when executing the convert command. defaults to 10"
         },
-        "px-to-rem.runOnSave": {
+        "px-to-rem.formatOnSave": {
           "type": "boolean",
           "default": false,
           "title": "format on save",
