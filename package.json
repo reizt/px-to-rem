@@ -1,5 +1,6 @@
 {
   "name": "px-to-rem",
+  "publisher": "reizt",
   "license": "MIT",
   "displayName": "CSS px to rem",
   "author": {
